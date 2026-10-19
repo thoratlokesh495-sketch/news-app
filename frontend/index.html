@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News App</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            📰 NewsApp
+        </div>
+
+        <nav>
+            <a href="#">General</a>
+            <a href="#">Technology</a>
+            <a href="#">Sports</a>
+            <a href="#">Business</a>
+            <a href="#">Science</a>
+            <a href="#">Health</a>
+            <a href="#">Entertainment</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="category">LATEST NEWS</p>
+
+                <h1>
+                    Stay Updated With The Latest News
+                </h1>
+
+                <p>
+                    Get the latest news from technology, sports,
+                    business, science and more.
+                </p>
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search news..."
+                    >
+
+                    <button id="searchButton">
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- News Section -->
+        <section class="news-section">
+
+            <div class="section-header">
+
+                <h2>Latest News</h2>
+
+                <span id="currentCategory">
+                    General
+                </span>
+
+            </div>
+
+
+            <!-- News Cards -->
+            <div id="newsContainer" class="news-grid">
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        📰
+                    </div>
+
+                    <div class="news-content">
+
+                        <span class="news-source">
+                            News Source
+                        </span>
+
+                        <h3>
+                            Your latest news will appear here
+                        </h3>
+
+                        <p>
+                            News articles will be loaded from
+                            the NewsAPI.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 NewsApp | Built with Python & Web Technologies
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

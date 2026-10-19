@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 70px;
+    background: #111827;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1e3a8a
+    );
+
+    color: white;
+
+    padding: 80px 8%;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.category {
+    color: #60a5fa;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.hero p {
+    line-height: 1.6;
+    color: #e5e7eb;
+}
+
+
+/* ================= SEARCH ================= */
+
+.search-box {
+    display: flex;
+    margin-top: 30px;
+    max-width: 600px;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    box-shadow: inset 0 0 0 2px #60a5fa;
+}
+
+.search-box button {
+    padding: 15px 25px;
+
+    border: none;
+
+    background: #2563eb;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================= NEWS SECTION ================= */
+
+.news-section {
+    padding: 50px 8%;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 30px;
+}
+
+#currentCategory {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* ================= NEWS GRID ================= */
+
+.news-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* ================= NEWS CARD ================= */
+
+.news-card {
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= NEWS IMAGE ================= */
+
+.news-image {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    display: block;
+
+    background: #dbeafe;
+}
+
+
+/* ================= NEWS CONTENT ================= */
+
+.news-content {
+    padding: 18px;
+}
+
+.news-source {
+    display: inline-block;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.news-content h3 {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    color: #111827;
+}
+
+.news-content p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= READ MORE BUTTON ================= */
+
+.read-more {
+    padding: 10px 16px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+.read-more:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111827;
+
+    color: #9ca3af;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+
+        height: auto;
+
+        padding: 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        margin-top: 15px;
+
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .search-box {
+        flex-direction: column;
+
+        border-radius: 8px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .news-section {
+        padding: 40px 6%;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-image {
+        height: 200px;
+    }
+}
+
+/* ================= ACTIVE CATEGORY ================= */
+
+.navbar nav a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: white;
+    background: #1f2937;
+}
+
+.navbar nav a.active {
+    color: white;
+    background: #2563eb;
+    font-weight: bold;
+}
+
+/* ================= LOADING ANIMATION ================= */
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 50px 20px;
+    color: #6b7280;
+}
+
+.loader {
+    width: 42px;
+    height: 42px;
+    border: 4px solid #dbeafe;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
